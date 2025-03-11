@@ -3,88 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página con Bootstrap</title>
+    <title>Project PRIME Showdown Promo</title>
     
     <!-- Enlace al CSS de Bootstrap (CDN) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilo personalizado para los colores morado y amarillo */
+        body {
+            background-color: #2a0044; /* Morado oscuro */
+            color: white;
+        }
+
+        .navbar-brand {
+            height: auto;
+            max-width: 150px;
+        }
+
+        h1, h2, h3, h6 {
+            color: #ffd700; /* Amarillo */
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con transparencia */
+        }
+
+        .btn-primary {
+            background-color: #ffd700; /* Amarillo */
+            border-color: #ffd700;
+        }
+
+        .btn-primary:hover {
+            background-color: #d4ac00; /* Amarillo oscuro */
+            border-color: #d4ac00;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+
+        .carousel-inner img {
+            border-radius: 10px; /* Bordes redondeados para las imágenes */
+        }
+
+        .video-container {
+            text-align: center;
+        }
+
+        video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
 
-    <header>
-
+    <header class="text-center py-4">
+        <img src="./imgs/Official PRIME Logo.png" alt="Logo PRIME" class="navbar-brand"/>
     </header>
 
-    <div class="container">
-        <h1>PROJECT PRIME Showdown</h1>
+    <div class="container mb-5">
+        <h1 class="text-center display-1">PROJECT PRIME SHOWDOWN</h1>
 
-        <p></p>
+        <p class="lead text-center">PROJECT PRIME Showdown es un videojuego estilo 'Beat Em Up' al más puro estilo arcade. Únete a Boss Mash Phony 
+          para rescatar a todos los trabajadores de PRIME y conquistar algunos planetas por el camino.</p>
     </div>
     
     <div class="container">
 
-        <h2>PERSONAJES</h2>
+        <h2 class="text-center">PERSONAJES</h2>
 
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
+        <div id="myCarousel" class="carousel slide w-75 mx-auto d-block" data-bs-ride="carousel">
+            <!-- Indicadores -->
             <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
             </ol>
         
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
         
-              <div class="item active">
-                <img src="./imgs/Boss Mash Phony splash art.png" alt="Boss Mash Phony" style="width:100%;">
-                <div class="carousel-caption">
+              <div class="carousel-item active">
+                <img src="./imgs/Boss Mash Phony splash art.png" alt="Boss Mash Phony" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
                   <h3>Boss Mash Phony</h3>
+                  <p>El actual líder de PRIME, un jefe duro de pelar con ambiciones de unir a todo el mundo bajo su mandato.</p>
                 </div>
               </div>
         
-              <div class="item">
-                <img src="./imgs/Kirpan splash art.png" alt="Kirpan" style="width:100%;">
-                <div class="carousel-caption">
+              <div class="carousel-item">
+                <img src="./imgs/Kirpan splash art.png" alt="Kirpan" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
                   <h3>Kirpan</h3>
+                  <p>La misteriosa mano derecha de Boss Mash Phony, una asesina despiadada que arranca las almas de sus víctimas.</p>
                 </div>
               </div>
           
             </div>
 
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-            </a>
-
+            <!-- Controles izquierdo y derecho -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
     </div>
     
-    <div class="container">
+    <div class="container mb-5">
 
-        <h2>HISTORIA</h2>
+        <h2 class="text-center">HISTORIA</h2>
 
-        <p></p>
+        <p class="lead">PRIME (Phony's Robotics Investments and Marketing Enterprise) es una compañía intergaláctica multimillonaria liderada
+           por el magnánimo Boss Mash Phony. Esta compañía inicialmente se basaba únicamente en la compraventa de maquinaria y robots
+            de diversos usos, pero gracias al ingenio de su actual líder, ha pasado de ser solo una compañía en convertirse en un imperio,
+             con el objetivo de unir todas las civilizaciones del universo bajo su mandato y que así todos puedan vivir en armonía, una meta
+              para nada perversa, porque alguien como Boss Mash Phony nunca haría el mal por su propio beneficio.</p>
 
-    </div>
-
-    <div class="container">
-
-        <h2>GAMEPLAY</h2>
-
-        <p></p>
-
-    </div>
-
-    <div class="container">
-
-        <h2>TRAILER OFICIAL</h2>
+        <p class="lead">Un día como cualquier otro, saltaron las alarmas de emergencia después de tanto tiempo, una invasión estaba siendo llevada 
+          a cabo sobre la sede de PRIME, secuestrando a los muchos trabajadores y capitanes que, por mucho que intentaron defenderse, 
+          fueron incapaces de detener el ataque sorpresa de los invasores. Boss Mash Phony fue despertado de su siesta matutina por 
+          Kirpan, su mano derecha y confidente más fiel, quien le informó de lo sucedido, causando que entrara en un intenso ataque 
+          de ira, diciendo: “¡Quién quiera que haya tenido la osadía de atacar PRIME le voy a dar tal paliza que no 
+          lo va a reconocer ni su madre!”. Con esa amenaza, el valeroso líder junto con su fiel compañera salieron a enfrentar a los invasores.</p>
 
     </div>
+
+    <div class="container">
+
+        <h2 class="text-center">GAMEPLAY</h2>
+
+        <p class="lead">El gameplay es del estilo “Beat-em Up” clásico, como Streets of Rage o Castle Crashers, en los que los personajes se mueven hacia la 
+          derecha y han de enfrentarse contra oleadas de enemigos conforme van avanzando en el nivel, terminando normalmente con un combate contra 
+          un jefe más poderoso.</p>
+
+        <p class="lead">Explora diversos planetas mientras te abres camino a través de hordas de enemigos, rescata a los trabajadores de PRIME y conquista planetas 
+          para poner en su lugar a los despiadados invasores. Muchos secretos te aguardan, incluyendo modos desbloqueables y nuevos personajes jugables.</p>
+
+        <img src="./imgs/Game Concept.png" alt="Imagen Gameplay" class="img-fluid rounded mx-auto d-block">
+    </div>
+
+    <div class="container video-container mb-5">
+        <h2 class="text-center">TRAILER OFICIAL</h2>
+        <video controls>
+            <source src="./imgs/Project PRIME Showdown Trailer.mp4" type="video/mp4">
+            Tu navegador no admite el elemento <code>video</code>.
+        </video>
+    </div>
+
+    <div class="container mb-5">
+
+      <h2 class="text-center">FECHA DE LANZAMIENTO</h2>
+
+      <h3 class="text-center">ALGÚN DÍA DEL AÑO 20XX</h3>
+
+      <h6 class="text-center">PROBABLEMENTE</h6>
+  </div>
 
     <!-- Enlace al archivo JS de Bootstrap (CDN) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
